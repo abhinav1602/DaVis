@@ -1,0 +1,43 @@
+CACHE MANIFEST
+
+#version 1.0 1-8-2017
+
+CACHE:
+
+#images
+https://abhinav1602.github.io/images/GPlus.ico
+https://abhinav1602.github.io/images/GQ.jpg
+https://abhinav1602.github.io/images/bday.png
+https://abhinav1602.github.io/images/browser.jpg
+https://abhinav1602.github.io/images/c++.png
+https://abhinav1602.github.io/images/education.jpg
+https://abhinav1602.github.io/images/email.png
+https://abhinav1602.github.io/images/fb.ico
+https://abhinav1602.github.io/images/insta.png
+https://abhinav1602.github.io/images/linked.png
+https://abhinav1602.github.io/images/linkedin.png
+https://abhinav1602.github.io/images/mypic.jpg
+https://abhinav1602.github.io/images/onyx.jpg
+https://abhinav1602.github.io/images/project.png
+https://abhinav1602.github.io/images/resume.jpg
+
+#internal HTML documents
+https://abhinav1602.github.io/
+https://abhinav1602.github.io/Abhinav_Tiwari_CV%20_1.pdf
+
+#style sheets
+http://fonts.googleapis.com/icon?family=Material+Icons
+https://abhinav1602.github.io/css/mycss.css
+https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css
+https://fonts.googleapis.com/css?family=Oswald|PT+Sans|Roboto|Ubuntu:300,400
+
+#style sheet images
+
+
+#javascript files
+https://code.jquery.com/jquery-2.1.1.min.js
+https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js
+https://abhinav1602.github.io/js/app.js
+
+NETWORK:
+*
