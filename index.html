@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <!--Import jQuery before materialize.js-->
     <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
@@ -32,7 +30,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.ie.min.css" />
     <![endif]-->
   
-
     <!-- For Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -42,14 +39,8 @@
     <link href="https://fonts.googleapis.com/css?family=Rationale" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans|Roboto|Ubuntu:300,400" rel="stylesheet">
 
-    
-    <style type="text/css" media="screen">
-         
-    </style>
-
     <script type="text/javascript">
       $(document).ready(function(){
-
         $("#contact").hide();
 
         $('#contactUs').click(function(){
@@ -57,10 +48,8 @@
           $("#top").toggle();
           $("#bottom").toggle();
         });
-      // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-
         $('.modal').toggle('open');
-
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
         $('.modal').modal({
             dismissible: true, // Modal can be dismissed by clicking outside of the modal
             opacity: 0.5, // Opacity of modal background
@@ -70,14 +59,10 @@
             endingTop: '20%', // Ending top style attribute
           }
         );
-
       });
     </script>
-
 </head>
-
 <body onload="init();">
-
     <!--Navigation Bar -->
        <nav>
         <div class="nav-wrapper cyan darken-1">
@@ -105,7 +90,6 @@
                 <a onclick=" $('#modal1').modal('close');" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
                 </div>
       </div>
-
 
       <!-- Contact Form -->
         <div id="contact" class="row card hoverable col s10 m10 l10 offset-s1 offset-l1 offset-m1">
@@ -140,7 +124,6 @@
         </div>
         <!-- Contact From Ends Here -->
 
-  
       <div class="row" id="top">
 
           <div class="col s12 m6 l6" style="margin-top:5%;" >
@@ -157,33 +140,6 @@
 
       </div>
 
-  
-   <!--    <div class="row">
-
-          <div class="col s3 m3 l3 offset-s5 offset-m5 offset-l5 center-align" id="mid1">
-
-            <div id="in-mid">
-             
-            <label for="number">Number of data<label> 
-            <br>
-            <input type="text" id="num" name="number" style="position:relative;float:center;width:30%"></input>
-            <br>
-            <input type="submit" id="n" onclick="fillLabel();"></input>
-
-            <br>
-            
-            <label for="y">Value of data<label>
-            <br>  
-            <input type="number" name="y" id="y" style="position:relative;float:center;width:30%"></input>
-            <br>
-            <input type="submit" id="val" onclick="pushVal();" style="position:relative;float:center;margin-bottom:10px"></input>
-
-          </div>
-
-        </div>
-
-      </div>     -->   
-
       <div class="row" id="bottom" >
 
           <div class="col s12 m4 l4" style="margin-top:5%;">
@@ -191,7 +147,6 @@
               Canvas failed to load
             </canvas>
           </div>
-
 
         <div class="col s12 m3 l3 card hoverable z-depth-5" id="mid1">
 
@@ -219,42 +174,28 @@
                 Canvas failed to load
               </canvas>   
           </div>
-
       </div>
 
-
-       <!-- BOTTOM LEFT RIBBON: START COPYING HERE -->
+     <!-- BOTTOM LEFT RIBBON: START COPYING HERE -->
     <a class="github-fork-ribbon left-bottom" style="position:relative;bottom:-5px;z-index:1" target="_blank" href="https://github.com/abhinav1602" title="Fork me on GitHub"></a>
     <!-- BOTTOM LEFT RIBBON: END COPYING HERE -->
 
-
     <footer class="page-footer cyan darken-4" >
-
         <div class="footer-copyright container">
 
           <div class="center" >
             <a class="white-text" href="https://github.com/abhinav1602" target="_blank">© abhinav1602</a>
-            
-            
+                 
             <a href="https://github.com/abhinav1602" target="_blank">
               <img src="images/github.png" height="20" width="20" style="margin-left:5px">
             </a>
-
             <a href="https://in.linkedin.com/in/abhinav-tiwari-a6829643" target="_blank">
               <img title="LinkedIn" alt="LinkedIn" src="images/linked.png" height="20" width="20" style="margin-left:5px" />
             </a>
-
           </div>
-
-          <div class="left" >
-            
-          </div>
-
         </div>
     </footer>
-
       <!--Custom Scripts -->
       <script src="js/app.js"></script>
-
 </body>
 </html>
