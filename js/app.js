@@ -60,6 +60,7 @@ function fillLabel(){
     colors.push(getRandomColor());
   }
 
+  alert("Please enter the "+sub+" values below one by one");
   /* For creating an initial example containing entered number of values*/
   firstTime();
   }
