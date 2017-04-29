@@ -29,9 +29,6 @@
     <!--[if lt IE 9]>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.ie.min.css" />
     <![endif]-->
-  
-    <!-- For Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
     <!-- Google Font -->
@@ -42,14 +39,15 @@
 
     <script type="text/javascript">
       $(document).ready(function(){
-        $(".button-collapse").sideNav
         $("#contact").hide();
+        $(".button-collapse").sideNav();
 
         $('.contactUs').click(function(){
           $("#contact").toggle();
           $("#top").toggle();
           $("#bottom").toggle();
         });
+
         $('.modal').toggle('open');
         // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
         $('.modal').modal({
