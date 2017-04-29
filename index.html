@@ -33,6 +33,7 @@
     <!-- For Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
@@ -67,14 +68,26 @@
        <nav>
         <div class="nav-wrapper cyan darken-1">
           <a class="brand-logo" style="font-family:'Gloria Hallelujah','Roboto';margin-left:10%;">Da-vis</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            
+          
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">reorder</i></a>
+          
+          <ul id="nav_ul" class="right hide-on-med-and-down">
             <li><a href="index.html">Home</a></li>
             <!-- Modal Trigger -->
             <li><a data-target="modal1">About Da-vis</a></li>
             <li><a href="https://abhinav1602.github.io" target="_blank">About Developer</a></li>
             <li><a id="contactUs">Contact Us</a></li>
           </ul>
+
+        <!-- For Mobile -->
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
+            <!-- Modal Trigger -->
+            <li><a data-target="modal1">About Da-vis</a></li>
+            <li><a href="https://abhinav1602.github.io" target="_blank">About Developer</a></li>
+            <li><a id="contactUs">Contact Us</a></li>
+          </ul>
+
         </div>
 
       </nav>
@@ -110,6 +123,7 @@
                 <label for="email">Email</label>
               </div>
             </div>
+
             <div class="row">
               <div class="input-field col s6 m12 l12">
                 <i class="material-icons prefix"></i>
@@ -126,14 +140,14 @@
 
       <div class="row" id="top">
 
-          <div class="col s12 m6 l6" style="margin-top:5%;" >
-            <canvas class="myHistogram hoverable" height="300" style="position:relative;float:center;margin-left:15%;">
+          <div class="col s10 m5 l6 push-s1 push-m1 push-l1 center" style="margin-top:5%;" >
+            <canvas class="myHistogram hoverable" id="can1" height="300">
               Canvas failed to load
             </canvas>
           </div>
 
-          <div class="col s12 m6 l6" style="margin-top:5%;">
-              <canvas class="myPieChart hoverable" height="300" style="position:relative;float:right;margin-right:10%;">
+          <div class="col s10 m4 l3 push-s1 push-m2 push-l2 center" style="margin-top:5%;">
+              <canvas class="myPieChart hoverable" id="can2" height="300">
                 Canvas failed to load
               </canvas>   
           </div>
@@ -142,13 +156,13 @@
 
       <div class="row" id="bottom" >
 
-          <div class="col s12 m4 l4" style="margin-top:5%;">
-            <canvas class="myDoughnut hoverable" height="300" style="position:relative;float:right;">
+          <div class="col s10 m4 l4 push-s1 push-m1 push-l1 center" id="can3" style="margin-top:5%;">
+            <canvas class="myDoughnut hoverable" height="300">
               Canvas failed to load
             </canvas>
           </div>
 
-        <div class="col s12 m3 l3 card hoverable z-depth-5" id="mid1">
+        <div class="col s6 m3 l3 push-s3 push-m1 card hoverable z-depth-5" id="mid1">
 
             <div id="in-mid">
              
@@ -169,15 +183,15 @@
           </div>
         </div>
 
-          <div class="col s12 m4 l4" style="margin-top:5%;">
-              <canvas class="myLineChart hoverable"  height="300" style="position:relative;float:right;">
+          <div class="col s10 m4 l3 push-s1 push-l1 push-m1 center" style="margin-top:5%;">
+              <canvas class="myLineChart hoverable"  id="can4" height="300">
                 Canvas failed to load
               </canvas>   
           </div>
       </div>
 
      <!-- BOTTOM LEFT RIBBON: START COPYING HERE -->
-    <a class="github-fork-ribbon left-bottom" style="position:relative;bottom:-5px;z-index:1" target="_blank" href="https://github.com/abhinav1602/DaVis" title="Fork me on GitHub"></a>
+    <a id="git_banner" class="github-fork-ribbon left-bottom" style="position:relative;bottom:-5px;z-index:999" target="_blank" href="https://github.com/abhinav1602/DaVis" title="Fork me on GitHub"></a>
     <!-- BOTTOM LEFT RIBBON: END COPYING HERE -->
 
     <footer class="page-footer cyan darken-4" >
@@ -194,6 +208,8 @@
             </a>
           </div>
         </div>
+
+
     </footer>
       <!--Custom Scripts -->
       <script src="js/app.js"></script>
